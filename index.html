@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Career Showcase</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <!-- tsParticles for particle background -->
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.11.1/tsparticles.bundle.min.js"></script>
+  <!-- Anime.js for subtle animations -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <!-- Chart.js for dashboards -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- Plotly for treemap -->
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+  <div id="tsparticles" class="particles-bg"></div>
+
+  <header class="nav">
+    <div class="container">
+      <div class="logo">Interactive<span class="dot">•</span>Resume</div>
+      <nav>
+        <a href="#work">Work</a>
+        <a href="#projects">Projects</a>
+        <a href="#dashboards">Dashboards</a>
+        <a href="#contact" class="cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-left">
+          <h1 class="title">Kalpa Liyanaarachchi <br> <span class="accent"> Data Scientist</span></h1>
+          <p class="lead">Experienced Data Scientist with 4+ years of experience across Telecommunications, Retail, and Logistics industries, specialising in Data Science, 
+            Data Analytics, and Business Intelligence</p>
+          <div class="hero-cta">
+            <a href="#work" class="btn">View Experience</a>
+            <a href="#projects" class="btn ghost">See Projects</a>
+          </div>
+        </div>
+        <div class="hero-right">
+          <div class="card mockup">
+            <img src="images/face2.png" alt="AI graphic">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="section">
+      <div class="container">
+        <h2 class="section-title">Work Experience</h2>
+        <div id="work-grid" class="grid"></div>
+      </div>
+    </section>
+
+    <section id="projects" class="section alt">
+      <div class="container">
+        <h2 class="section-title">Key Projects</h2>
+        <div id="projects-grid" class="grid"></div>
+      </div>
+    </section>
+
+    <section id="dashboards" class="section">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <div class="dash-grid">
+          <div class="card">
+            <div id="treemapChart" style="width:100%;height:300px;"></div>
+          </div>
+          <div class="card">
+            <canvas id="pieChart"></canvas>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section alt">
+      <div class="container">
+        <h2 class="section-title">Education & Certifications</h2>
+        <div class="education-grid">
+          <div class="card">
+            <h3 class="card-title">Master of Science in Data Science</h3>
+            <p class="card-meta">University of Sri Jayawardenepura, Sri Lanka</p>
+            <p class="card-description">Thesis -  Enhancing explainability in Large Language Models</p>
+            <p class="card-date">2023 - 2025</p>
+          </div>
+          <div class="card">
+            <h3 class="card-title">Bachelor of Science in Computer Science</h3>
+            <p class="card-meta">University of Sri Jayawardenepura, Sri Lanka</p>
+            <p class="card-description">Focused mainly on Computer Science and Statistics</p>
+            <p class="card-date">2019 - 2022</p>
+          </div>
+          <div class="card">
+            <h3 class="card-title">Microsoft Azure Certified: Data Fundamentals Associate (DP-900)</h3>
+            <p class="card-meta">Microsoft Certification</p>
+            <p class="card-description">Proficient in Power BI and Microsoft Analytics services for business intelligence solutions.</p>
+            <p class="card-date">2026</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section alt">
+      <div class="container">
+        <h2 class="section-title">Contact & Download</h2>
+        <div class="contact-row">
+          <p>Looking to collaborate or need full resume? <a href="https://drive.google.com/file/d/1VsgZCFsWlLAuRUt6ALSn9Plw4z8yDv81/view?usp=sharing">Download a PDF</a> or say hello — kalpanipun7@gmail.com <br> Call +61 424777480</p>
+          <div class="socials">
+            <a href="https://www.linkedin.com/in/kalpa-liyanaarachchi-7b020520a/">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">© 2026 Kalpa Liyanaarachchi</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
