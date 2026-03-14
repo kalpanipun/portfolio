@@ -14,10 +14,17 @@ const projects = [
 // Render work
 const workGrid = document.getElementById('work-grid');
 workData.forEach(w=>{
+  let keywords = '';
+  if(w.company === 'John Keells Holdings') {
+    keywords = 'Azure Databricks, Python, PySpark, PowerBI, CI/CD, Azure DevOps';
+  } else if(w.company === 'Dialog Axiata') {
+    keywords = 'SQL, Snowflake, AWS, Tableau, ETL, Explainable AI';
+  }
   const el = document.createElement('div'); el.className='experience';
   el.innerHTML = `<h3>${w.role} — <span style="font-weight:600">${w.company}</span></h3>
   <div class="muted">${w.period}</div>
-  <div>${w.summary}</div>`;
+  <div>${w.summary}</div>
+  <div class="keywords">${keywords.split(', ').map(k => `<span class="keyword">${k}</span>`).join('')}</div>`;
   workGrid.appendChild(el);
 });
 

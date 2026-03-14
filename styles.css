@@ -89,3 +89,20 @@ main{position:relative;z-index:10}
     box-shadow: 0 0 20px #fff, 0 0 30px #7c3aed, 0 0 40px #7c3aed;
   }
 }
+
+/* Keywords styles */
+.keywords {
+  margin-top: 12px;
+}
+
+.keyword {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--muted);
+  padding: 4px 8px;
+  border-radius: 12px;
+  margin: 2px 4px 2px 0;
+  font-size: 12px;
+  font-weight: 500;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
