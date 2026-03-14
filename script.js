@@ -1,7 +1,7 @@
 // Demo data
 const workData = [
-  {company:'John Keells Holdings', role:'Data Scientist', period:'2024 - 2025', summary:'Led the design and implementation of end-to-end analytical solutions using Azure Databricks focused on solving complex business problems through predictive modelling and mathematical optimisations.'},
-  {company:'Dialog Axiata', role:'Data Scientist', period:'2021 - 2024', summary:'Role focused on developing dashboards using tableau and Power BI, building data pipelines and data marts, while mentoring teams on query optimization and cost-efficient practices.'},
+  {company:'John Keells Holdings', role:'Data Scientist', period:'2024 - 2025', summary:'Led the design and implementation of end-to-end analytical projects using Azure Databricks focused on solving complex business problems through predictive modelling and mathematical optimisations.'},
+  {company:'Dialog Axiata', role:'Data Scientist', period:'2021 - 2024', summary:'Role focused on developing dashboards using tableau and Power BI, building data pipelines and data marts using snowflake, while mentoring teams on query optimization and cost-efficient practices.'},
 ];
 
 const projects = [

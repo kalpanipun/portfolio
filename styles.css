@@ -35,3 +35,57 @@ main{position:relative;z-index:10}
 .experience:hover,.project:hover,.card:hover{transform:translateY(-6px);transition:transform 240ms cubic-bezier(.2,.9,.3,1)}
 /* highlight before headings */
 .section-title::before{content:"";display:block;width:48px;height:4px;border-radius:4px;background:linear-gradient(90deg,#7c3aed,#06b6d4);margin-bottom:12px}
+
+/* KPI Section Styles */
+.kpi-grid {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.kpi-item {
+  text-align: center;
+  flex: 1;
+  min-width: 200px;
+}
+
+.kpi-item h3 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+  color: white;
+}
+
+.star {
+  position: relative;
+  width: 7rem;
+  height: 7rem;
+  background: linear-gradient(90deg, #7c3aed, #06b6d4);
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  animation: glow 2s ease-in-out infinite alternate;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.value {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.8rem;
+  color: white;
+  font-weight: bold;
+  z-index: 1;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 5px #fff;
+  }
+  to {
+    box-shadow: 0 0 20px #fff, 0 0 30px #7c3aed, 0 0 40px #7c3aed;
+  }
+}
