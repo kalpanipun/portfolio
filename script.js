@@ -5,9 +5,9 @@ const workData = [
 ];
 
 const projects = [
-  {title:'Demand Forecasting and Truck dispatch scheduling', desc:'Developed machine learning models to forecast demand and optimize truck scheduling for logistics operations.', img:'https://www.slimstock.com/wp-content/uploads/2023/04/demand-forecasting-feature-image.webp'},
-  {title:'Factory Production planning optimisation', desc:'Optimized factory production planning using advanced analytics and simulation techniques.', img:'https://www.marketing91.com/wp-content/uploads/2020/02/Types-of-Production-Planning.jpg'},
-  {title:'Chun prediction project', desc:'Predicted customer churn using machine learning models and implemented a dashboard for tracking churn metrics.', img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbFV0khYcZ_gWx0Gq0jyRx3B7hRai6a1oM0w&s'},
+  {title:'Demand Forecasting and Truck Dispatch Scheduling', desc:'Developed machine learning models to forecast demand and optimize truck scheduling for logistics operations.', img:'https://www.slimstock.com/wp-content/uploads/2023/04/demand-forecasting-feature-image.webp'},
+  {title:'Factory Production Planning Optimisation', desc:'Optimized factory production planning using advanced analytics and simulation techniques.', img:'https://www.marketing91.com/wp-content/uploads/2020/02/Types-of-Production-Planning.jpg'},
+  {title:'Customer Churn Prediction Project', desc:'Predicted customer churn using machine learning models and implemented a dashboard for tracking churn metrics.', img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbFV0khYcZ_gWx0Gq0jyRx3B7hRai6a1oM0w&s'},
   {title:'Vehicle Routing Optimization', desc:'Optimized vehicle routing using machine learning and graph algorithms.', img:'https://d2908q01vomqb2.cloudfront.net/4d89d294cd4ca9f2ca57dc24a53ffb3ef5303122/2023/02/17/SCL-OptimizeRouting-VehicleRoutingProblem_s.jpg'}
 ];
 
@@ -59,7 +59,7 @@ tsParticles.load("tsparticles", {
 // Treemap chart
 const treemapData = [{
   type: 'treemap',
-  labels: ['Python', 'SQL', 'Azure','Databricks','Tableau','Power BI','ML','Data Analytics','Optimisation','PySpark'],
+  labels: ['Python', 'SQL', 'Azure','Databricks','Tableau','Power BI','ML','Analysis','Optimisation','PySpark'],
   parents: ['', '', '', '', '', '', '', '', '',''],
   values: [30, 20, 15, 15, 12, 20, 10, 8, 6,10],
   marker: {colors: ['#7c3aed', '#06b6d4', '#a78bfa', '#9333ea', '#0891b2', '#3406eb', '#a855f7', '#22d3ee', '#d8b4fe', '#b2e7f0']},
@@ -71,7 +71,7 @@ Plotly.newPlot('treemapChart', treemapData, treemapLayout, {responsive:true,disp
 const pieCtx = document.getElementById('pieChart').getContext('2d');
 new Chart(pieCtx, {
   type:'doughnut',
-  data:{labels:['Machine Learning','Data Analysis','Visualisation'],datasets:[{data:[45,30,25],backgroundColor:['#7c3aed','#06b6d4','#a78bfa']} ]},
+  data:{labels:['Machine Learning','Statistics','Business Intelligence'],datasets:[{data:[45,30,25],backgroundColor:['#7c3aed','#06b6d4','#a78bfa']} ]},
   options:{responsive:true,plugins:{legend:{position:'bottom'}}}
 });
 
